@@ -19,7 +19,7 @@ byu_df.columns = ['Metric', 'Season', 'Conference']
 metrics = df['Metric'].unique().tolist()
 
 # Title
-st.title('March Madness Analysis and BYU Metrics ')
+st.title('March Madness Analysis and Kentucky Metrics ')
 
 # Tabs for each metric
 tabs = st.tabs(metrics)
