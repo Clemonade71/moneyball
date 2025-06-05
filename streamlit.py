@@ -36,10 +36,10 @@ for tab, metric in zip(tabs, metrics):
         byu_season_value = byu_df[byu_df['Metric'] == metric]['Season'].values
         byu_conference_value = byu_df[byu_df['Metric'] == metric]['Conference'].values
         if len(byu_season_value) > 0 and len(byu_conference_value) > 0:
-            st.metric(label=f"BYU {metric} (Season)", value=byu_season_value[0])
-            st.metric(label=f"BYU {metric} (Conference)", value=byu_conference_value[0])
+            st.metric(label=f"Kentucky {metric} (Season)", value=byu_season_value[0])
+            st.metric(label=f"Kentucky {metric} (Conference)", value=byu_conference_value[0])
         else:
-            st.write("No BYU data available for this metric.")
+            st.write("No Kentucky data available for this metric.")
 
         # Display statistical ranges in list form with mean and 95% confidence intervals
         st.subheader("Statistical Ranges by Round")
