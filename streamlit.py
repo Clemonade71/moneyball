@@ -32,7 +32,7 @@ for tab, metric in zip(tabs, metrics):
         rounds = metric_data['Round'].unique()
 
         # Display BYU Data
-        st.subheader(f"BYU {metric}")
+        st.subheader(f"Kentucky {metric}")
         byu_season_value = byu_df[byu_df['Metric'] == metric]['Season'].values
         byu_conference_value = byu_df[byu_df['Metric'] == metric]['Conference'].values
         if len(byu_season_value) > 0 and len(byu_conference_value) > 0:
